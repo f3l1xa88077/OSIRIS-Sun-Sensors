@@ -5,7 +5,7 @@ Arduino code for OSIRIS + Excel Spreadsheet + Python 3D visualisation.
 ```
 📄 README.md
 📁 OSIRISv1/
-├── 📄 main.py
+├── 📄 OSIRISv1.ino
 📁 OSIRISv2/
 ├── 📄 OSIRISv2.ino
 ├── 📄 OSIRISv2 Data Analysis.xlsx
