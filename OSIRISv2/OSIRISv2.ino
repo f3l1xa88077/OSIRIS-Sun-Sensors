@@ -8,8 +8,8 @@ Overview: This algorithm converts ADC data from three OSIRIS modules into the su
 It first converts the ADC data to the angle of incidence, calculates the Lambertian value and obtains the intersection of all three light cones,
 i.e., where the source is located. It represents this using spherical coordinates (θ and φ).
 
-Interpretation: Please ensure all three modules are placed perpendiculat to each other. φ represents the angle of elevation/depression to the horizon.
-θ represents the azimuth angle. Module "X" points in θ=0deg and module "Y" points in θ=90deg.
+Interpretation: Please ensure all three modules are placed perpendiculat to each other. θ represents the angle of elevation/depression to the horizon / angle between the XY plane and the +Z axis.
+φ represents the azimuth angle from +X to +Y. Module "X" points in φ=0deg and module "Y" points in φ=90deg.
 
 */
 
@@ -17,7 +17,7 @@ Interpretation: Please ensure all three modules are placed perpendiculat to each
 
 #define BOOT_BUTTON_PIN 0
 #define SAMPLES_PER_SECOND 10
-#define SAMPLE_SECONDS 3
+#define SAMPLE_SECONDS 2.5
 #define NUM_MODULES 4
 
 const int pins[] = {4, 5, 7, 16, 17};
