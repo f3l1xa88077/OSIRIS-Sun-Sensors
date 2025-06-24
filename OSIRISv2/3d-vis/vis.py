@@ -12,9 +12,9 @@ def spherical_to_cartesian_custom(R, theta_deg, phi_deg):
     # Custom system:
     # θ = angle from +X axis toward +Z
     # φ = azimuth from +X toward +Y (around Z axis)
-    x = R * np.cos(theta)
-    y = R * np.sin(theta) * np.sin(phi)
-    z = R * np.sin(theta) * np.cos(phi)
+    x = R * np.cos(theta) * np.cos(phi)
+    y = R * np.cos(theta) * np.sin(phi)
+    z = R * np.sin(theta)
     return x, y, z
 
 # Load the CSV data
